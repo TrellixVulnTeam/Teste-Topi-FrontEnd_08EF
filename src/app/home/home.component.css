@@ -1,0 +1,97 @@
+.container{
+   margin: 0;
+   display: grid;
+   grid-template-columns: 33.33% 33.33% 33.33%;
+   align-self: center;
+   align-items: center;
+   /* text-align: center; */
+   /* padding: 10px 20px; */
+
+}
+.polaroid{
+   width: 95%;
+   background-color: #fcedd8;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+   text-align: center;
+   position: relative;
+   margin: 15px auto 0 auto;
+}
+
+.polaroid:hover{
+   box-shadow: 5px 5px 0px #ff893b, 
+   10px 10px 0px #465461, 
+   15px 15px 0px #0f30007c;
+   
+}
+
+.image{
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.p{
+   font-weight: bolder;
+   color: white;
+}
+
+.str{
+   margin: 0;
+   padding: 5px;
+   color: seagreen;
+   font-family: 'Niconne', cursive;
+   font-weight: 700;
+}
+
+
+.titulo{
+   text-align: center;
+}
+
+.todos{
+   margin: 5px;
+}
+
+.find-a-meal{
+   color: #fcedd8;
+   width: fit-content;
+   margin: auto;
+   font-family: 'Niconne', cursive;
+}
+
+div.busca{
+   margin: 0 20px 0 20px;
+   display: grid;
+   grid-template-columns: 40% 30% 30%;
+}
+
+input{
+   background-color: #fcedd8;
+   border: none;
+   position: relative;
+   width: 80%;
+   height: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+   outline: none;
+   margin: auto;
+}
+
+input:hover{
+   box-shadow: 5px 5px 0px #ff893b, 
+   10px 10px 0px #465461, 
+   15px 15px 0px #0f30007c;
+}
+
+select{
+   margin: 0;
+   padding: 0;
+   width: 80%;
+   background-color: #fcedd8;
+   outline: none;
+   margin: auto;
+}
+
+button{
+   width: 80%;
+   margin: auto;
+}

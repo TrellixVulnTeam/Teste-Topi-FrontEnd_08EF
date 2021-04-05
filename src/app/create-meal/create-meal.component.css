@@ -1,0 +1,44 @@
+form h2{
+   margin: auto;
+   max-width: fit-content;
+   color: #fcedd8;
+}
+
+div.formulario-grid{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+}
+
+
+div.input{
+   margin: 15px auto 15px auto;
+   width: 90%;
+   
+}
+
+div.input input{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+   outline: none;
+   border: none;
+   width: 90%;
+   background-color: #fcedd8;
+}
+
+div.input textarea{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+   outline: none;
+   border: none;
+   width: 90%;
+   background-color: #fcedd8;
+}
+
+div.input p.p{
+   margin: 2px 0px;
+   color: #fcedd8;
+   font-weight: 600;
+}
+
+button{
+   margin: 25px;
+}

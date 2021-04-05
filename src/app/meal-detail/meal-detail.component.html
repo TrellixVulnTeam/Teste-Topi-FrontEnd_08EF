@@ -1,0 +1,43 @@
+<div class="card">
+   <img src="{{meal.strMealThumb}}" alt="">
+
+  <div class="top">
+     <div class="text-left">
+      <ul>
+         <li *ngFor="let tag of tags">{{tag}}</li>
+      </ul>
+     </div>
+     
+     <div class="text-center">
+        <div class="text">
+           <h2 class="titulo">Name: {{meal.strMeal}}</h2>
+           <h3 class="category">Category: {{meal.strCategory}}</h3>
+           <h3 class="nationality">Nationality: {{meal.strArea}}</h3>
+        </div>
+     </div>
+     
+     <div class="text-right"></div>
+
+   </div>
+
+   <div class="ingredients">
+      <table>
+         <tr>
+            <th>What</th>
+            <th>How much/many</th>
+         </tr>
+         <tr *ngFor="let ingredient of ingredients; let i = index">
+            <td>{{ingredients[i]}}</td>
+            <td class="table-right">{{measures[i]}}</td>
+         </tr>
+      </table>
+   </div>
+
+   
+
+   <div class="instructions">
+      <h2>Instructions:</h2>
+      <p>{{meal.strInstructions}}</p>
+   </div>
+
+</div>

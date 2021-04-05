@@ -1,0 +1,35 @@
+<form>
+   <h2>Register a new Meal</h2>
+   <div class="formulario-grid">
+      <div class="input"><p class="p"> Name: </p><input type="text" name="name" [(ngModel)]="meal.strMeal"></div>
+      <div class="input"><p class="p"> Category: </p><input type="text" name="category" [(ngModel)]="meal.strCategory"></div>
+      <div class="input"><p class="p"> Nationality:</p> <input type="text" name="nationality" [(ngModel)]="meal.strArea"></div>
+
+      <div class="input"><p class="p"> Image URL:</p> <input type="text" name="nationality" [(ngModel)]="meal.strMealThumb"></div>
+
+      <div class="input"><p class="p"> Tags (separated by comma):</p> <input type="text" name="nationality" [(ngModel)]="meal.strTags"></div>
+      
+      <div class="input"><p class="p"> Youtube video: </p> <input type="text" name="nationality" [(ngModel)]="meal.strYoutube"></div>
+      
+      <div class="input"><p class="p"> Ingredient: </p> <input type="text" name="nationality" [(ngModel)]="meal.strIngredient1"></div>
+      
+      <div class="input"><p class="p"> Measure: </p> <input type="text" name="nationality" [(ngModel)]="meal.strMeasure1"></div>
+      
+      <div class="input"><p class="p"> Ingredient: </p> <input type="text" name="nationality" [(ngModel)]="meal.strIngredient2"></div>
+      
+      <div class="input"><p class="p"> Measure: </p> <input type="text" name="nationality" [(ngModel)]="meal.strMeasure2"></div>
+      
+      <div class="input"><p class="p"> Ingredient: </p> <input type="text" name="nationality" [(ngModel)]="meal.strIngredient3"></div>
+      
+      <div class="input"><p class="p"> Measure: </p> <input type="text" name="nationality" [(ngModel)]="meal.strMeasure3"></div>
+      
+      <div class="input"><p class="p"> Ingredient: </p> <input type="text" name="nationality" [(ngModel)]="meal.strIngredient4"></div>
+      
+      <div class="input"><p class="p"> Measure: </p> <input type="text" name="nationality" [(ngModel)]="meal.strMeasure4"></div>
+
+   </div>
+      
+   <div class="input"><p class="p">Instructions: </p><textarea class="input" name="Instructions" id="" cols="30" rows="10" [(ngModel)]="meal.strInstructions"></textarea></div>
+      
+   <button type="button" (click)="cadastrar()">Cadastrar</button>   
+</form>

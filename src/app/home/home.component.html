@@ -1,0 +1,27 @@
+
+<h2 class="find-a-meal"> Find a meal: </h2>
+
+<div class="busca">
+   <input type="text" [(ngModel)] = "mealStrMealFilter" (ngModelChange)="filtrar()">
+   <select name="busca-por-categoria"[(ngModel)] = "mealStrCategoryFilter">
+      <option *ngFor="let category of distinctCategories">{{category}}</option>
+   </select>
+   <select name="busca-por-nacionalidade" [(ngModel)] = "mealStrNationalityFilter">
+      <option *ngFor="let nationality of distinctNationalities">{{nationality}}</option>
+   </select>
+</div>
+
+<div class="grid">
+   
+   
+   <div class="container">
+      <div class="todos" *ngFor="let meal of meals|filter:mealStrCategoryFilter:'strCategory'|filter:mealStrNationalityFilter:'strArea'">
+         <div class="polaroid" (click)="onSelect(meal)">
+            <img class="image" src="{{meal.strMealThumb}}" alt="Meal Image">
+            <p class="str">{{meal.strMeal}}</p>
+            <p class="str">{{meal.strCategory}}</p>
+            <p class="str">{{meal.strArea}}</p>
+         </div>
+      </div>
+   </div>
+</div>

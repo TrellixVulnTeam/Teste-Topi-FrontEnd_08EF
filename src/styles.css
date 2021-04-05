@@ -1,4 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 html{
-   background-color: rgba(50, 117, 30, 0.452);
+   padding: 0;
+   margin: 0;
+   background-color: #05270093;
+   /* background-image: linear-gradient(180deg, #05270093 10%, #031b00f3 100%); */
+   min-height: fit-content;
+   font-family: 'niconne', cursive;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+}
+
+button{
+   background-color: transparent;
+   background-repeat: no-repeat;
+   border: solid #fcedd8 2px;
+   color: #fcedd8;
+   align-items: center;
+   justify-content: center;
+   padding-top: 5px;
+   padding: 1px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover{
+   background-color: #fcedd8;
+   color: #05270093;
+   box-shadow: 
+               2px 2px 0px #ff893b, 
+              4px 4px 0px #465461, 
+              6px 6px 0px #0f30007c;
 }

@@ -33,11 +33,6 @@
    color: seagreen;
 }
 
-.formulario{
-   max-width: 200px;
-   margin: 0;
-}
-
 .titulo{
    text-align: center;
 }
@@ -53,12 +48,12 @@
 }
 
 button{
-   background-color: seagreen; /* Green */
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   border: solid #031b00f3 2px;
+   color: #031b00f3;
+   align-items: center;
+   justify-content: center;
+   padding-top: 5px;
+   padding: 1px;
 }

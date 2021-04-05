@@ -10,14 +10,17 @@ export class MealService {
 
   constructor(private http: HttpClient) {}
 
+  mealUrl: string = "http://localhost:8080/api/v1/meal";
+
   getMeals(): Observable<any> {
-    //https://www.themealdb.com/api/json/v1/1/search.php?s=
-    //http://localhost:8080/api/v1/meal
-    return this.http.get<any>("http://localhost:8080/api/v1/meal");
+    return this.http.get<any>(this.mealUrl);
+  }
+
+  getMeal(id: string): Observable<any> {
+    return this.http.get<any>(this.mealUrl+"/"+id);
   }
 
   postMeals(meal: Meal): Observable<any> {
-    return this.http.post("http://localhost:8080/api/v1/meal", meal);
-     
+    return this.http.post(this.mealUrl, meal);
   }
 }

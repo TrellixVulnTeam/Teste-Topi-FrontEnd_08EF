@@ -1,0 +1,18 @@
+h2, h3{
+   color: #fcedd8;
+   text-align: center;
+}
+
+div.div-main-about{
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+
+div.div-main-about img{
+   margin: auto;
+}
+
+div.div-main-about a{
+   margin: auto;
+   text-decoration: none;
+}
