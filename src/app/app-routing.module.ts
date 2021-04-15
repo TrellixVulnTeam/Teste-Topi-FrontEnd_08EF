@@ -7,6 +7,11 @@ import { MealDetailComponent } from './meal-detail/meal-detail.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: "/home",
+    pathMatch: 'full'
+  },
   {path: 'home', component: HomeComponent},
   {path: 'meal/:id', component: MealDetailComponent},
   {path: 'create-meal', component: CreateMealComponent},

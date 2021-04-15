@@ -10,7 +10,7 @@ export class MealService {
 
   constructor(private http: HttpClient) {}
 
-  mealUrl: string = "http://localhost:8080/api/v1/meal";
+  mealUrl: string = "https://teste-topi-api-meals.herokuapp.com/api/v1/meal";
 
   getMeals(): Observable<any> {
     return this.http.get<any>(this.mealUrl);
